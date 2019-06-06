@@ -2,7 +2,7 @@ import axios from "../axios";
 export const userInfo = (params)=>{
     return axios.service({
         url:'/users/login',
-        method: 'post',
+        method: 'get',
         params
     })
 }

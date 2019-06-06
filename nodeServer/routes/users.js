@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
-router.post('/login',service.login);
+router.get('/login',service.login);
 router.post('/register',service.register);
 
 module.exports = router;
