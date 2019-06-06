@@ -9,7 +9,7 @@ export const userInfo = (params)=>{
 export const register = (params)=>{
     return axios.service({
         url:'/users/register',
-        method: 'post',
+        method: 'get',
         params
     })
 }

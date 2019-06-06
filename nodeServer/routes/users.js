@@ -7,6 +7,6 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/login',service.login);
-router.post('/register',service.register);
+router.get('/register',service.register);
 
 module.exports = router;

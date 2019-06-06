@@ -2,6 +2,9 @@ const db = require("./../sql/dbConfig");
 
 // 用户登录
 exports.login = (req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+
+    res.header('Access-Control-Allow-Credentials', 'true'); // 允许服务器端发送Cookie数据
     let loginForm = req.query;
     console.log(loginForm, '===');
     // "SELECT * FROM user WHERE userName='liuta' and passWord='123'"
