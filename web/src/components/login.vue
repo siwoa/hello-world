@@ -41,7 +41,7 @@ export default {
                 passWord: this.password
               }).then(res => {
                 if (res.status == 0) {
-                  this.$router.push("/home");
+                  this.$router.push({path: "/home"});
                 }else if (res.status == 1) {
                   MessageBox.confirm("注册并且登录?")
                     .then(action => {
@@ -50,7 +50,7 @@ export default {
                         passWord: this.password
                       }).then(res => {
                         if(res.status == 0) {
-                          this.$router.push("/home");
+                          this.$router.push({path: "/home"});
                         }
                       });
                     })
