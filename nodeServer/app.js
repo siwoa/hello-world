@@ -8,8 +8,17 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-var cors = require('cors'); 
-app.use(cors()); 
+// var cors = require('cors'); 
+// app.use(cors()); 
+// app.all('*', function(req, res, next) {
+//   // res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "X-Requested-With,Content-Type");
+//   res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+//   res.header("Access-Control-Allow-Origin", "http://10.31.29.138:8099/");
+//   next();
+// });
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

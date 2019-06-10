@@ -11,17 +11,17 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/users': {
-        target: "http://localhost:3000/",
-        changeOrigin:true,
-        pathRewrite: {
-          '^/api': '/api'   //重写接口，本地对接 需要改为 /
-        }
-      },
+      // '/users': {
+      //   target: "http://localhost:3000/",
+      //   changeOrigin:true,
+      //   pathRewrite: {
+      //     '^/api': '/api'   //重写接口，本地对接 需要改为 /
+      //   }
+      // },
     },
 
     // Various Dev Server settings
-    host: '10.31.29.95', // can be overwritten by process.env.HOST
+    host: '10.31.29.138', // can be overwritten by process.env.HOST
     port: 8099, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,

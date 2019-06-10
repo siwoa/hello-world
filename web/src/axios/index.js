@@ -1,6 +1,6 @@
 import axios from "axios";
 import { Toast } from "mint-ui";
-axios.defaults.withCredentials = true;
+// axios.defaults.withCredentials = true;
 var service = axios.create({
     baseURL: 'http://localhost:3000/',
     // timeout: 10000,
