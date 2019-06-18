@@ -54,7 +54,9 @@ export default {
                         }
                       });
                     })
-                    .catch(() => {});
+                    .catch(() => {
+                      alert(2)
+                    });
                 }
               });
             } else {

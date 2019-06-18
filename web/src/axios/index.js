@@ -2,7 +2,8 @@ import axios from "axios";
 import { Toast } from "mint-ui";
 // axios.defaults.withCredentials = true;
 var service = axios.create({
-    baseURL: 'http://localhost:3000/',
+    // baseURL: 'http://localhost:3000/',
+    baseURL: 'https://11140b99.cpolar.io/',
     // timeout: 10000,
 });
 service.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
