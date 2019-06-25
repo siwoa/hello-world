@@ -80,6 +80,8 @@ export default {
   padding: 0 4vw;
   padding-top: 15vh;
   // font-size: 16px;
+  background: url("../assets/img/bg.jpg")no-repeat;
+  background-size: 100% 100%;
 }
 .mint-button {
   width: 100%;
@@ -87,5 +89,18 @@ export default {
 }
 .mint-cell {
   border-top: 3px solid #eee !important;
+  background-color: transparent;
+  color: #fff;
+  input {
+    background: transparent;
+    color: #fff;
+  }
+  ::-webkit-input-placeholder {
+    color: #fff;
+    // font-size: .5em;
+  }
+  .mint-field-clear {
+    // opacity: 1;
+  }
 }
 </style>
